@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CleanArchitectureBlueprints</string>
+    <string name="an_error_has_occurred">An error has occurred: %1$s</string>
+</resources>
