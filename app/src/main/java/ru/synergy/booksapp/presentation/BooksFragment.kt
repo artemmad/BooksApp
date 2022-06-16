@@ -1,6 +1,7 @@
 package ru.synergy.booksapp.presentation
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,6 +22,7 @@ class BooksFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val booksViewModel: BooksViewModel by viewModels {
+        Log.i("KEK", requireActivity().application.toString())
         BooksViewModel.BooksViewModelFactory(
             ((requireActivity().application) as CleanArchitectureBlueprintsApplication).getBooksUseCase,
             ((requireActivity().application) as CleanArchitectureBlueprintsApplication).getBookmarksUseCase,
